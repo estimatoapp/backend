@@ -1,7 +1,7 @@
 const express = require('express')
 const Sentry = require('@sentry/node')
 const Tracing = require('@sentry/tracing')
-
+const cors = require('cors')
 const app = express()
 const port = 3001
 
@@ -16,6 +16,8 @@ Sentry.init({
 
 app.use(Sentry.Handlers.requestHandler());
 app.use(Sentry.Handlers.tracingHandler());
+
+app.use(cors())
 
 app.get('/', (req, res) => {
   res.json({ hello: 'Hello World!' })
