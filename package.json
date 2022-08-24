@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/main.js",
     "build": "./scripts/build-upload.sh",
-    "deploy": "echo \"Error: no deploy process\" && exit 1",
+    "deploy": "./scripts/deploy.sh",
     "test": "echo \"Error: no test runner\" && exit 1"
   },
   "repository": {
