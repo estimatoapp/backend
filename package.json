@@ -4,6 +4,7 @@
   "description": "Welcome to our backend!",
   "main": "index.js",
   "scripts": {
+    "dev:up": "devcontainer up --workspace-folder .",
     "start": "node src/main.js",
     "build": "./scripts/build-upload.sh",
     "deploy": "./scripts/deploy.sh",
@@ -27,6 +28,7 @@
     "express": "^4.18.1"
   },
   "devDependencies": {
+    "@devcontainers/cli": "^0.14.0",
     "prisma": "^4.1.1"
   },
   "prisma": {
