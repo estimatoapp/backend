@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/estimatoapp/backend#readme",
   "dependencies": {
-    "@prisma/client": "^4.1.1",
+    "@prisma/client": "^4.3.1",
     "@sentry/node": "^7.10.0",
     "@sentry/tracing": "^7.10.0",
     "body-parser": "^1.20.0",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@devcontainers/cli": "^0.14.0",
-    "prisma": "^4.1.1"
+    "prisma": "^4.3.1"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
